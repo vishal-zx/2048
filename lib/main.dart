@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 import 'home.dart';
 
 void main() {
+  // SharedPreferences.setMockInitialValues({});
   runApp(MyApp());
 }
 
@@ -12,8 +14,10 @@ class MyApp extends StatelessWidget {
       title: '2048',
       theme: ThemeData(                                                                        
         primarySwatch: Colors.blue,
+        fontFamily: 'StarJedi'
       ),
-      home: Home(title: '2048'),
+      home: Home(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
